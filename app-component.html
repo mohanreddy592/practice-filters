@@ -1,0 +1,20 @@
+
+<div>
+    <h2>My App Filters</h2>
+    <div>
+        <h3>Original Text: {{$ctrl.title}}</h3>
+
+        <h3>Upper Case Filter: {{$ctrl.title | uppercase}}</h3>
+        <h3>Lower Case Filter: {{$ctrl.title | lowercase}}</h3>
+        <span>Original Date: {{$ctrl.todaydate}}</span><br>
+        <span>Convert To Date: {{$ctrl.todaydate | date}}</span>
+        <h4>Original Name: {{$ctrl.name}}</h4>
+        <h4>Welcome Filter: {{$ctrl.name | welcomeFilter}}</h4>
+        <h4>Greetings Filter: {{$ctrl.name | greetingsFilter:'Hello':"Welcome to filters"}}</h4>
+
+        <span>Experience Filter: {{$ctrl.experince | expFilter}}</span><br>
+
+        <span>Age Filter: {{$ctrl.age | ageFilter:10}}</span><br>
+        <span>Age Filter: {{$ctrl.age | ageFilter}}</span><br>
+    </div>
+</div>
