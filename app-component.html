@@ -7,7 +7,9 @@
         <h3>Upper Case Filter: {{$ctrl.title | uppercase}}</h3>
         <h3>Lower Case Filter: {{$ctrl.title | lowercase}}</h3>
         <span>Original Date: {{$ctrl.todaydate}}</span><br>
-        <span>Convert To Date: {{$ctrl.todaydate | date}}</span>
+        <span>Convert To Date: {{$ctrl.todaydate | date}}</span><br>
+        <span>Convert To Date: {{$ctrl.todaydate | date: 'MM/dd/yy'}}</span><br>
+        <span>Convert To Date: {{$ctrl.todaydate | date: 'dd/MM/yyyy'}}</span>
         <h4>Original Name: {{$ctrl.name}}</h4>
         <h4>Welcome Filter: {{$ctrl.name | welcomeFilter}}</h4>
         <h4>Greetings Filter: {{$ctrl.name | greetingsFilter:'Hello':"Welcome to filters"}}</h4>
